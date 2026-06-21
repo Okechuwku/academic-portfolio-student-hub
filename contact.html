@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and viewport responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Okechuwku Emeka Joel</title>
+    
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation bar with links to all pages -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Brand name -->
+            <div class="nav-logo">
+                <a href="index.html">OEJ Academic Hub</a>
+            </div>
+            
+            <!-- Navigation menu items -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="planner.html" class="nav-link">Planner</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Page title section -->
+        <section class="page-header">
+            <h1>Get In Touch</h1>
+            <p>Reach out for academic collaboration, project opportunities, mentorship, or networking</p>
+        </section>
+
+        <!-- Contact section with form and info -->
+        <section class="contact-section">
+            <div class="contact-container">
+                
+                <!-- Contact form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Me a Message</h2>
+                    
+                    <!-- Contact form with validation -->
+                    <form id="contactForm" class="contact-form">
+                        
+                        <!-- Name field -->
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name"
+                                placeholder="Your full name"
+                                required
+                            >
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <!-- Email field -->
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email"
+                                placeholder="your.email@example.com"
+                                required
+                            >
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <!-- Phone number field -->
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone"
+                                placeholder="Your phone number (digits only)"
+                                required
+                            >
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <!-- Subject field -->
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject"
+                                placeholder="What is this about?"
+                            >
+                        </div>
+
+                        <!-- Message textarea -->
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message"
+                                placeholder="Your message here..."
+                                rows="6"
+                                required
+                            ></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        
+                        <!-- Success message displayed after form submission -->
+                        <div id="successMessage" class="success-message" style="display:none;">
+                            ✓ Thank you! Your message has been received. I’ll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact information sidebar -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <!-- Email contact info -->
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p>
+                            <a href="mailto:o.joel2708@miva.edu.ng">o.joel2708@miva.edu.ng</a>
+                        </p>
+                    </div>
+
+                    <!-- Website contact info -->
+                    <div class="contact-item">
+                        <h3>🌐 Website</h3>
+                        <p>
+                            <a href="index.html">Portfolio Homepage</a>
+                        </p>
+                    </div>
+
+                    <!-- Social media links -->
+                    <div class="contact-item">
+                        <h3>🔗 Connect With Me</h3>
+                        <div class="social-links">
+                            <a href="https://linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+                            <a href="https://github.com" target="_blank" class="social-link">GitHub</a>
+                            <a href="mailto:o.joel2708@miva.edu.ng" class="social-link">Email</a>
+                        </div>
+                    </div>
+
+                    <!-- Response time info -->
+                    <div class="contact-item response-time">
+                        <h3>⏱️ Response Time</h3>
+                        <p>I typically respond within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <!-- FAQ item 1 -->
+                <div class="faq-item">
+                    <h3>What can I contact you about?</h3>
+                    <p>
+                        Academic collaborations, project feedback, internship opportunities, mentorship, and general networking.
+                    </p>
+                </div>
+
+                <!-- FAQ item 2 -->
+                <div class="faq-item">
+                    <h3>Are you open to student projects?</h3>
+                    <p>
+                        Yes. I welcome well-defined academic or student-facing ideas, especially if they help solve a real problem.
+                    </p>
+                </div>
+
+
+                <!-- FAQ item 3 -->
+                <div class="faq-item">
+                    <h3>How do you approach collaboration?</h3>
+                    <p>
+                        I prefer clear goals, respectful communication, and consistent follow-through so every project stays organized.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section with copyright information -->
+    <footer>
+        <p>&copy; 2026 Okechuwku Emeka Joel. All Rights Reserved.</p>
+        <p>Academic Portfolio & Student Management Platform | MIVA Open University</p>
+    </footer>
+
+    <!-- Link to external JavaScript file for form validation -->
+    <script src="js/contact.js"></script>
+</body>
+</html>

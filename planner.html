@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and viewport responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Okechuwku Emeka Joel</title>
+    
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation bar with links to all pages -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Brand name -->
+            <div class="nav-logo">
+                <a href="index.html">OEJ Academic Hub</a>
+            </div>
+            
+            <!-- Navigation menu items -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="planner.html" class="nav-link active">Planner</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Page title section -->
+        <section class="page-header">
+            <h1>Academic Planner</h1>
+            <p>Organize assignments, revision sessions, deadlines, and student activities in one place</p>
+        </section>
+
+        <!-- Planner section -->
+        <section class="planner-section">
+            <div class="planner-container">
+                
+                <!-- Task input form -->
+                <div class="task-input-container">
+                    <h2>Add Academic Task</h2>
+                    
+                    <!-- Form for adding tasks -->
+                    <form id="taskForm" class="task-form">
+                        <!-- Task title input field -->
+                        <div class="form-group">
+                            <label for="taskTitle">Task / Activity</label>
+                            <input 
+                                type="text" 
+                                id="taskTitle" 
+                                placeholder="e.g., Submit research summary"
+                                required
+                            >
+                        </div>
+
+                        <!-- Task description input field -->
+                        <div class="form-group">
+                            <label for="taskDesc">Notes</label>
+                            <textarea 
+                                id="taskDesc" 
+                                placeholder="Add class details, references, or study notes..."
+                                rows="3"
+                            ></textarea>
+                        </div>
+
+                        <!-- Task due date input field -->
+                        <div class="form-group">
+                            <label for="taskDue">Deadline</label>
+                            <input 
+                                type="date" 
+                                id="taskDue"
+                            >
+                        </div>
+
+                        <!-- Task priority selection -->
+                        <div class="form-group">
+                            <label for="taskPriority">Priority</label>
+                            <select id="taskPriority">
+                                <option value="low">Low</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+
+                        <!-- Submit button to add task -->
+                        <button type="submit" class="add-task-btn">Add Task</button>
+                    </form>
+                </div>
+
+                <!-- Task statistics and controls -->
+                <div class="planner-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Total Items:</span>
+                        <span class="stat-value" id="totalTasks">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Completed:</span>
+                        <span class="stat-value" id="completedTasks">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Pending:</span>
+                        <span class="stat-value" id="pendingTasks">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Due Soon:</span>
+                        <span class="stat-value" id="dueSoonTasks">0</span>
+                    </div>
+                    <button type="button" id="clearAllBtn" class="clear-all-btn">Clear All</button>
+                </div>
+            </div>
+
+            <!-- Tasks list display section -->
+            <div class="tasks-list-container">
+                <h2>Your Academic Queue</h2>
+                
+                <!-- Filter buttons for task status -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+
+                <!-- Unordered list to display tasks -->
+                <ul id="taskList" class="task-list">
+                    <!-- Tasks will be added here dynamically by JavaScript -->
+                </ul>
+
+                <!-- Empty state message when no tasks exist -->
+                <div id="emptyState" class="empty-state">
+                    <p>📋 No academic tasks yet. Add one to get started!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips and best practices section -->
+        <section class="planner-tips">
+            <h2>Study Planning Tips</h2>
+            
+            <!-- Tips as unordered list -->
+            <ul class="tips-list">
+                <li>
+                    <strong>Prioritize Daily:</strong> 
+                    Start with the task that moves your academics forward the most.
+                </li>
+                <li>
+                    <strong>Break Down Projects:</strong> 
+                    Split major assignments into smaller, manageable milestones.
+                </li>
+                <li>
+                    <strong>Set Realistic Deadlines:</strong> 
+                    Leave room for revision, rest, and unexpected class work.
+                </li>
+                <li>
+                    <strong>Review Regularly:</strong> 
+                    Check your dashboard daily so deadlines never surprise you.
+                </li>
+                <li>
+                    <strong>Celebrate Wins:</strong> 
+                    Mark completed work to keep momentum and confidence high.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer section with copyright information -->
+    <footer>
+        <p>&copy; 2026 Okechuwku Emeka Joel. All Rights Reserved.</p>
+        <p>Academic Portfolio & Student Management Platform | MIVA Open University</p>
+    </footer>
+
+    <!-- Link to external JavaScript file for planner functionality -->
+    <script src="js/planner.js"></script>
+</body>
+</html>
