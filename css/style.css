@@ -775,6 +775,10 @@ ul {
     border-radius: var(--border-radius-lg);
 }
 
+.project-stats + .highlights {
+    margin-top: 0;
+}
+
 /* Project stats heading */
 .project-stats h2 {
     text-align: center;
@@ -816,6 +820,11 @@ ul {
 .stat-box p {
     color: var(--dark-text);
     font-weight: 600;
+}
+
+.project-stats .stat-box p {
+    font-weight: 500;
+    margin-top: var(--spacing-sm);
 }
 
 /* ============================================
