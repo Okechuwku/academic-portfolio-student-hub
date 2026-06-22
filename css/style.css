@@ -1214,6 +1214,7 @@ ul {
 
 /* Success message */
 .success-message {
+    display: none;
     background: rgba(0, 204, 136, 0.1);
     color: var(--success-color);
     padding: var(--spacing-md);
