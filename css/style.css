@@ -482,6 +482,59 @@ ul {
     margin-bottom: var(--spacing-lg);
 }
 
+/* About page tabular layout */
+.section-heading-center {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-lg);
+}
+
+.about-tables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.table-card {
+    background: var(--light-text);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+.table-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.15rem;
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--light-text);
+    overflow: hidden;
+    border-radius: var(--border-radius-md);
+}
+
+.profile-table thead {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: var(--light-text);
+}
+
+.profile-table th,
+.profile-table td {
+    padding: var(--spacing-md);
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-table tbody tr:hover {
+    background: rgba(0, 212, 255, 0.05);
+}
+
 /* Skills table styling */
 .skills-table {
     width: 100%;
